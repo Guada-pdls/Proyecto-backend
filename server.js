@@ -22,12 +22,8 @@ const products_function = async (req, res) => {
 
         return res.json(new Response({products: [...products]}, "success", false))
     } catch (error) {
-        // return res.json(new Response(null, "error", error)) 
-        console.log(typeof error)
-        return res.json(error)
-        /*
-        * Error devuelve obj vacio
-        */
+        console.log(error.message)
+        return res.json(new Response(null, "error getting products", true))
     }
 }
 
@@ -44,7 +40,8 @@ const productId_function = async (req, res) => {
         : res.json(new Response({product}, "success", false))
 
     } catch (error) {
-        return res.json(new Response(null, "error", error))
+        console.log(error.message)
+        return res.json(new Response(null, "error getting product", true))
     }
 }
 
@@ -62,8 +59,8 @@ const carts_function = async (req, res) => {
 
         return res.json(new Response({carts: fileCarts}, "success", false))
     } catch (error) {
-        console.log(error)
-        return res.json(new Response(null, "error", error))
+        console.log(error.message)
+        return res.json(new Response(null, "error getting carts", true))
     }
 }
 
@@ -80,7 +77,8 @@ const cartId_function = async (req, res) => {
         : res.json(new Response({cart}, "success", false))
 
     } catch (error) {
-        return res.json(new Response(null, "error", error))
+        console.log(error.message)
+        return res.json(new Response(null, "error getting cart", true))
     }
 }
 
