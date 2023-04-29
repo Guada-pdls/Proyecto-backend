@@ -1,0 +1,26 @@
+{
+  "name": "proy-backend",
+  "version": "1.0.0",
+  "description": "Product Manager es un objeto que contiene un array vacío de products y 3 métodos:\r - addProduct: Recibe como parámetros las características de un producto a agregar. La función genera a partir de la longitud del array de products, un id que se va incrementando producto a producto. Genera un objeto product con ese id y los parámetros asignados, y lo pushea al array products.\r - getProducts: Retorna el array products.\r - getProductById: Recibe un id como parámetro y mediante un find, busca en products una coincidencia. Si la hay, la devuelve. De lo contrario, muestra el mensaje \"Product not found\".",
+  "main": "ProductManager.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server..js",
+    "dev": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guada-pdls/Proyecto-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guada-pdls/Proyecto-backend/issues"
+  },
+  "homepage": "https://github.com/Guada-pdls/Proyecto-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
