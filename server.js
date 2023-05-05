@@ -16,7 +16,7 @@ const products_route = '/api/products'
 const products_function = async (req, res) => {
     try {
         const limit = req.query.limit
-        let products = await store.getProduts()
+        let products = await store.getProducts()
 
         limit && (products = products.slice(0, limit))
 
