@@ -1,7 +1,6 @@
-// const fs = require('fs');
 import fs from 'fs'
 
-class ProductManager {
+export class ProductManager {
   constructor(path) {
     this.path = path
   }
@@ -69,7 +68,6 @@ class ProductManager {
       const product = await this.getProductById(id)
       if (typeof product === 'object') {
         const modifiedProduct = { ...product, ...data, id: id } // Creo un nuevo objeto con todas las propiedades del original y le agrego las de data. También reescribo el id para evitar que en data se pueda modificar.
-        console.log({ ...product, ...data })
 
         // Elimino el producto antiguo del archivo y agrego el modificado
         await this.deleteProduct(id)
@@ -81,14 +79,14 @@ class ProductManager {
 
         return 'Product modified successfully'
       }
-      return `No products found with ID:${id}`
+      return `No products found with ID ${id}`
     } catch (error) {
       return 'updateProduct: error'
     }
   }
 }
 
-export const store = new ProductManager('./data/products.json')
+export const store = new ProductManager('./src/data/products.json')
 
 // const test = async () => {
 //   console.log(await store.addProduct('té', 'hoja en sobre', 8, 'sin imágen'))

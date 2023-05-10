@@ -40,20 +40,28 @@
     "stock": 15
   },
   {
-    "id": 6,
-    "title": "lapicera",
-    "description": "lapicera",
-    "price": 10,
-    "thumbnail": "sin imágen",
-    "stock": 22
-  },
-  {
     "id": 7,
     "title": "auriculares",
     "description": "auriculares",
     "price": 39,
     "thumbnail": "sin imágen",
     "stock": 3
+  },
+  {
+    "id": 9,
+    "title": "marcalibros",
+    "description": "marcalibros",
+    "price": 2,
+    "thumbnail": "sin imágen",
+    "stock": 5
+  },
+  {
+    "id": 10,
+    "title": "teclado",
+    "description": "teclado",
+    "price": 49,
+    "thumbnail": "sin imágen",
+    "stock": 0
   },
   {
     "id": 8,
@@ -64,19 +72,11 @@
     "stock": 0
   },
   {
-    "id": 9,
-    "title": "marcalibros",
-    "description": "marcalibros",
-    "price": 2,
+    "id": 6,
+    "title": "lapicera",
+    "description": "lapicera",
+    "price": 10,
     "thumbnail": "sin imágen",
-    "stock": 0
-  },
-  {
-    "id": 10,
-    "title": "teclado",
-    "description": "teclado",
-    "price": 49,
-    "thumbnail": "sin imágen",
-    "stock": 0
+    "stock": 30
   }
 ]
